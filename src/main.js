@@ -9,9 +9,9 @@ import VueLazyload from 'vue-lazyload'
 import 'lib-flexible/flexible.js'
 import './widget.js'
 import Vuex from 'vuex'
-import BootstrapVue from 'bootstrap-vue'
 
-Vue.use(BootstrapVue)
+FastClick.attach(document.body)
+
 Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.use(VueLazyload, {
@@ -20,8 +20,6 @@ Vue.use(VueLazyload, {
   loading: './assets/loading.gif',
   attempt: 1
 })
-
-FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 
